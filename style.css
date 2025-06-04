@@ -1,0 +1,39 @@
+#startScreen {
+    position: fixed;  /* overlay on top */
+    text-align: center;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('snakedrink.png') no-repeat center center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Press Start 2P', monospace;
+    font-size: 25px;
+    color: rgba(212, 24, 24);
+    text-shadow: 3px 3px 6px black;
+    cursor: pointer;
+    z-index: 1000;
+    user-select: none;
+  }
+
+  #gameCanvas {
+    display: none; /* hide game initially */
+    background-color: rgb(0, 0, 0);
+  }
+  
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+canvas {
+    background: url('grass_template2.jpg') no-repeat center center;
+    background-size: cover;
+   border: 2px solid #444;
+}
